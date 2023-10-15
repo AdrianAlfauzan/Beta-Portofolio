@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio1">Portofolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>This is where I share my best works</p>
+        </div>
+    </section>
+
+
+    <section id="about">
+        <h2>Tentang Saya</h2>
+        <p>I am a web developer with experience in both front-end and back-end development. I am always seeking
+            opportunities to learn new things and create innovative solutions.</p>
+    </section>
+
+    <section id="portfolio1">
+        <h2>Portofolio 1</h2>
+        <div class="project">
+            <img src="image/1.png" alt="Project 1">
+            <img src="image/2.png" alt="Project 1">
+            <img src="image/3.png" alt="Project 1">
+        </div>
+        <h3>Description 1</h3>
+        <p>At the beginning of my journey in the world of web development, I felt challenged to create my first website.
+            I decided to adopt a more conservative approach with a normal and monotonous appearance, focusing on basic
+            functionality and clear information presentation. This website may not have had striking visual effects or
+            creative design, but it was an essential first step in learning the fundamentals of HTML, CSS, and
+            JavaScript. My first website may not have had standout design elements, but it helped me understand the
+            basic structure of a website and how to organize content. During this process, I also began to learn the
+            importance of simple layouts, intuitive navigation, and the appropriate use of color.
+
+            Although my first website may have appeared simple and monotonous, this experience laid the foundation for
+            my progress in the world of web development. I continued to develop my skills, explore more engaging
+            designs, and create more captivating web experiences in the future.</p>
+        <br>
+        <br>
+        <button id="tombol1">Translate</button>
+        <p id="teks1" class="hidden">
+            <br>
+            Pada awal perjalanan saya dalam dunia pengembangan web, saya merasa tertantang
+            untuk membuat website pertama saya. Saya memutuskan untuk mengadopsi pendekatan yang lebih konservatif
+            dengan tampilan normal dan monoton, dengan fokus pada fungsi dasar dan penyajian informasi yang jelas.
+            Website ini mungkin tidak memiliki efek visual yang mencolok atau desain yang kreatif, tetapi itu adalah
+            langkah awal yang penting dalam belajar dasar-dasar HTML, CSS, dan JavaScript. Website pertama saya mungkin
+            tidak memiliki elemen desain yang menonjol, tetapi hal itu membantu saya memahami struktur dasar situs web
+            dan cara menyusun konten. Selama proses ini, saya juga mulai belajar tentang pentingnya tata letak yang
+            sederhana, navigasi yang intuitif, dan penggunaan warna yang tepat. Meskipun website pertama saya mungkin
+            tampak sederhana dan monoton, pengalaman ini membantu saya membangun dasar yang kuat untuk kemajuan saya di
+            dunia pengembangan web. Saya terus mengembangkan keterampilan saya, menjelajahi desain yang lebih menarik,
+            dan menciptakan pengalaman web yang lebih menarik di masa depan.
+        </p>
+
+
+        <script>
+            var tombol1 = document.getElementById('tombol1');
+            var teks1 = document.getElementById('teks1');
+            var tampil1 = false; // Mengatur status tampilan awal
+
+            tombol1.addEventListener('click', function () {
+                if (tampil1) {
+                    teks1.style.opacity = '0'; // Mengubah opasitas menjadi 0 (menyembunyikan)
+                    setTimeout(function () {
+                        teks1.style.display = 'none'; // Mengubah tampilan menjadi "none" setelah efek selesai
+                    }, 2000); // 2 detik (sesuai dengan durasi transisi)
+                } else {
+                    teks1.style.display = 'block'; // Menampilkan teks
+                    setTimeout(function () {
+                        teks1.style.opacity = '1'; // Mengubah opasitas menjadi 1 (menampilkan)
+                    }, 0); // Tidak ada penundaan (efek dimulai segera)
+                }
+                tampil1 = !tampil1; // Ubah status tampilan
+            });
+
+        </script>
+    </section>
+    <section id="portfolio2">
+        <h2>Portofolio 2</h2>
+        <div class="project">
+            <img src="image/4.png" alt="Project 1">
+            <img src="image/5.png" alt="Project 1">
+            <img src="image/6.png" alt="Project 1">
+        </div>
+        <h3>Description 2</h3>
+        <p>When I first entered the world of web development, I designed my initial website with a seemingly ordinary
+            and monotonous appearance. Though it appeared simple, it was a crucial first step in my journey. I focused
+            on the fundamentals of HTML and CSS, creating web pages more centered on functionality rather than
+            aesthetics. However, I wasn't content with my basic understanding. I felt inspired to keep learning and
+            growing. I explored various learning resources, delved into captivating web design principles, and
+            continuously deepened my understanding of programming languages and relevant tools.
+
+            Years passed, and my learning journey never ceased. Eventually, with unwavering dedication and evolving
+            experience, I succeeded in creating a vastly improved website. This website not only featured an appealing
+            design but also harmoniously integrated both form and function. The primary message from this journey is
+            that the determination to keep learning and growing is the key to success in the world of web development.
+            Through this journey, I've realized the importance of patience and passion in achieving our goals. I am
+            ready to keep honing my skills and crafting increasingly impressive web experiences in the future.
+        </p>
+        <br>
+        <br>
+        <button id="tombol">Translate</button>
+        <p id="teks" class="hidden">
+            <br>
+            Ketika saya pertama kali memasuki dunia pengembangan web, saya merancang
+            website pertama saya dengan tampilan yang terkesan normal dan monoton. Meskipun tampak sederhana, itu adalah
+            langkah awal yang penting dalam perjalanan saya. Saya fokus pada dasar-dasar HTML dan CSS, menciptakan
+            halaman web yang lebih tentang fungsi daripada estetika. Namun, saya tidak puas dengan tingkat pemahaman
+            saya yang sederhana. Saya merasa terinspirasi untuk terus belajar dan berkembang. Saya menjelajahi berbagai
+            sumber daya belajar, menggali ke dalam prinsip-prinsip desain web yang menarik, dan terus memperdalam
+            pemahaman saya tentang bahasa pemrograman dan alat-alat yang relevan. Bertahun-tahun berlalu, dan perjalanan
+            pembelajaran saya tidak pernah berhenti. Akhirnya, dengan dedikasi yang sungguh-sungguh dan pengalaman yang
+            terus berkembang, saya berhasil menciptakan website yang jauh lebih baik. Website tersebut tidak hanya
+            memiliki tampilan yang menarik tetapi juga menggabungkan fungsi dan estetika secara harmonis. Pesan utama
+            dari perjalanan ini adalah bahwa tekad untuk terus belajar dan berkembang adalah kunci keberhasilan dalam
+            dunia pengembangan web. Melalui perjalanan ini, saya menyadari betapa pentingnya kesabaran dan semangat
+            dalam mencapai tujuan kita. Saya siap terus mengasah keterampilan saya dan menciptakan pengalaman web yang
+            semakin mengesankan di masa depan.
+        </p>
+
+
+        <script>
+            var tombol = document.getElementById('tombol');
+            var teks = document.getElementById('teks');
+            var tampil = false; // Mengatur status tampilan awal
+
+            tombol.addEventListener('click', function () {
+                if (tampil) {
+                    teks.style.opacity = '0'; // Mengubah opasitas menjadi 0 (menyembunyikan)
+                    setTimeout(function () {
+                        teks.style.display = 'none'; // Mengubah tampilan menjadi "none" setelah efek selesai
+                    }, 2000); // 2 detik (sesuai dengan durasi transisi)
+                } else {
+                    teks.style.display = 'block'; // Menampilkan teks
+                    setTimeout(function () {
+                        teks.style.opacity = '1'; // Mengubah opasitas menjadi 1 (menampilkan)
+                    }, 0); // Tidak ada penundaan (efek dimulai segera)
+                }
+                tampil = !tampil; // Ubah status tampilan
+            });
+
+        </script>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <ul>
+            <li>
+                <a href="https://github.com/AdrianAlfauzan "><img src="image/github.png" alt=""></a>
+            </li>
+            <li>
+                <a href="www.tiktok.com/@onlymeleon "><img src="image/tik-tok.png" alt=""></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/_leonyr/"><img src="image/instagram.png" alt=""></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/@CallMeLeeon"><img src="image/youtube.png" alt=""></a>
+            </li>
+        </ul>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
